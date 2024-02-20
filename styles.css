@@ -1,7 +1,7 @@
 /* @media screen and (min-width: 601px){
  */
 
-
+/* referenced the mdn web docs "Using media queries" article to set up my media queries */
 @media screen and (max-width: 600px){
     body{
     flex-direction: column;
@@ -57,12 +57,13 @@ body {
   /* flex-wrap: wrap; */
 }
 
+/* referenced the lab slides to set up my flex container */
 .flex-container{
   display: flex;
   justify-content: space-between;
 }
 
-
+/* referenced the lab slides to get the idea to do the , . */
 .staff1, .staff2, .staff3, .staff4{
   flex: 1;
   background-color: orange;
