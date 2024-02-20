@@ -1,12 +1,45 @@
-#logoBar{
-  width: 30vw;
-  height: 100vh;
+/* @media screen and (min-width: 601px){
+ */
+
+
+@media screen and (max-width: 600px){
+    body{
+    flex-direction: column;
+    }
+    #logoBar{
+      width: 30vw;
+      flex-direction: column;
+    }
+    #siteLogo{
+      display: inline-block;
+      width: 100%;
+      flex-direction: column;
+    }
+  
 }
-#siteLogo{
-  width: 100%;
+  
+@media screen and (min-width: 601px){
+    body{
+    flex-direction: row;
+    }
+    #logoBar{
+      width: 30vw;
+    
+      flex-direction: column;
+    }
+    #siteLogo{
+      display: inline-block;
+      width: 100%;
+      flex-direction: column;
+    }
+  
 }
+
+
 body {
   display: flex;
+  background-color: bisque;
+  
 }
 #staffGallery{
   width: 70vw;
@@ -17,4 +50,33 @@ body {
   width: 100%;
   height: auto;
   height: 300px;
+}
+.staffGallery{
+  display: flex;
+  flex-direction:column;
+  /* flex-wrap: wrap; */
+}
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.staff1, .staff2, .staff3, .staff4{
+  flex: 1;
+  background-color: orange;
+  margin: 20px;
+  margin-bottom: 350px;
+  flex-wrap: wrap;
+}
+
+.staffGalleryDescriptions{
+  text-emphasis: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: pink;
+  width: 250px;
+  flex-wrap:wrap;
 }
