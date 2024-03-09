@@ -2,82 +2,168 @@
  */
 
 /* referenced the mdn web docs "Using media queries" article to set up my media queries */
-@media screen and (max-width: 600px){
-    body{
-    flex-direction: column;
-    }
-    #logoBar{
-      width: 30vw;
-      flex-direction: column;
-    }
-    #siteLogo{
-      display: inline-block;
-      width: 100%;
-      flex-direction: column;
-    }
-  
-}
-  
-@media screen and (min-width: 601px){
-    body{
-    flex-direction: row;
-    }
-    #logoBar{
-      width: 30vw;
-    
-      flex-direction: column;
-    }
-    #siteLogo{
-      display: inline-block;
-      width: 100%;
-      flex-direction: column;
-    }
-  
-}
 
-
+/* General Page Styling */
 body {
-  display: flex;
-  background-color: bisque;
-  
-}
-#staffGallery{
-  width: 70vw;
-  display: inherit;
-
-}
-.galleryImage{
-  width: 100%;
-  height: auto;
-  height: 300px;
-}
-.staffGallery{
-  display: flex;
-  flex-direction:column;
-  /* flex-wrap: wrap; */
+  font-family: Arial, sans-serif;
+  background-color: #f3f1f1cc;
+  margin: 0;
+  padding: 0;
 }
 
-/* referenced the lab slides to set up my flex container */
-.flex-container{
-  display: flex;
-  justify-content: space-between;
+/* Header Styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-/* referenced the lab slides to get the idea to do the , . */
-.staff1, .staff2, .staff3, .staff4{
-  flex: 1;
-  background-color: orange;
-  margin: 20px;
-  margin-bottom: 350px;
-  flex-wrap: wrap;
+
+/* Navigation Bar Styling */
+/* nav ul {
+  list-style-type: none;
+  padding: 0;
+} */
+
+nav ul li {
+  display: inline;
+  margin-left: 10px;
 }
 
-.staffGalleryDescriptions{
-  text-emphasis: black;
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* .content{
   display: flex;
+  flex-direction: row;
+} */
+
+/* Image Styling */
+/* Reference: To center text, I visited the CSS Layout - Horizontal & Vertical Align website
+ https://www.w3schools.com/css/css_align.asp */
+/* .img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+} */
+
+
+
+/* @media screen and (min-width: 768px)
+#block-promo-hero {
+    background-image: url(https://www.freshbooks.com/wp-content/uploads/2024/02/home-hero-q1-s2-2024-1024.jpg);
+    background-repeat: no-repeat;
+    background-color: #002d79;
+} */
+
+
+.content{
+  /* display:flex */
+  height:100vh;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  background-color: pink;
-  width: 250px;
-  flex-wrap:wrap;
+  gap: 3em;
+  flex-grow: 1;
+  padding: 0 40px;
+}
+/* Reference: To center text, I visited the CSS Layout - Horizontal & Vertical Align website
+ https://www.w3schools.com/css/css_align.asp */
+ /* Also referenced YouTube video 'How to Align Divs Side by Side in HTML & CSS | Align Three Divs | Responsive'
+ to learn how to make the divs side by side */
+.content-divs1, .content-divs2, .content-divs3, .content-divs4{
+  width: 21em;
+  height: 25em;
+  background-color: #fff;
+  box-shadow: 5px 5px 25px; 
+  padding: 10px 30px;
+  border-radius: 10px;
+  /* gap: 10px; */
+  /* padding-left: 10%; */
+  /* text-align: center;
+  border: 3px solid green; */
+}
+
+.content-div-subtitles{
+  margin-left: 0;
+}
+
+h2{
+  color:black;
+  margin: 0;
+}
+
+button{
+  padding: 10px 18px;
+  background-color: beige;
+  border:none;
+  cursor: pointer;
+  border-radius: 2px;
+  text-transform:uppercase;
+  font-weight: bold;
+  color:#fff;
+  margin-top: 20x;
+}
+
+button:hover{
+  background-color: aquamarine;
+}
+
+@media (min-width:430px){
+  .content {
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    gap: 3em;
+    flex-grow: 1;
+    padding: 0 40px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+}
+
+@media (min-width: 768px){
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+  .content-divs1, .content-divs2, .content-divs3, .content-divs4{
+    max-width: 80%;
+    padding: 50px 30px;
+  }  
+  h2{
+    font-size: 3rem;
+    margin:1.5rem;
+  }
+  /* .content-layout {
+    margin-left: 0;
+    margin-bottom: 10px;
+  } */
+}
+/*  */
+
+/* Navigation Bar resizing */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
 }

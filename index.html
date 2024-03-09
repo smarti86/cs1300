@@ -14,49 +14,73 @@
   </head>
 
   <!-- page content goes into <body> -->
-  <body>
-    <div id="logoBar">
-      <h1>Welcome to 100 Acre Wood!</h1>
-      <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/>
-      <h3>We're glad you're here :D</h3>
-    </div>
-    <hr/>
-    <div id="staffGallery">
-      
-    <div class="flex-container"> 
-      <!-- citation: for the flex-container, I inspected the actual course website for csci1300 to confirm that 
-      I did have to do a div for reach staff card. From there, I got the inspiration to add role="complementary" -->
-      <!-- I also referenced the W3 Website on aria-labels to refresh my memory -->
-        <div class="staff1" role="complementary" aria-label="Eeyore-Eh Staff Gallery Card"> 
-          <img src="./assets/Eeyore-Eh.png" class="galleryImage" aria-label="Eeyore-Eh">
-          <div class="staffGalleryDescriptions">
-              <h4>Eeyore-Eh</h4>
-          </div>
+    <body>
+
+      <!-- Referenced the CSS Navigation Bar W3 School webpage for a refresher on navigation bars
+      and got the idea to structure my navigation bar as: nav ul li a
+      https://www.w3schools.com/css/css_navbar.asp  -->
+      <!-- Used https://www.w3.org/TR/WCAG20-TECHS/H37.html to refresh my understanding on alt tags -->
+      <header>
+        <h1 alt="The Elite Repeat" >The Elite Repeat</h1>
+        <nav>
+          <ul>
+            <li><a href="..." alt="About">About</a></li>  <!-- TODO: Fill out href-->
+            <li><a href="..." alt="Directions">Directions</a></li> <!-- TODO: Fill out href-->
+            <li><a href="..." alt="Hours">Hours</a></li> <!-- TODO: Fill out href-->
+            <li><a href="..." alt="Contact Us">Contact Us</a></li> <!-- TODO: Fill out href-->
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Begin the body content -->
+      <!-- <img class -->
+      <!-- <img src="pic_trulli.jpg" alt="Italian Trulli"> -->
+      <!-- <div id="block-promo-hero" data-block="acf/promo-hero" class="fp-block promo-hero wide-block new position-relative row p-0 my-0 animate" data-has-countdown="false" data-show-countdown="true" data-is-active-campaign="true">
+		          -->
+				
+
+
+      <!-- <div class> -->
+      <div class="content">
+        <div class="content-divs1">
+          <h2 class="content-div-subtitles" alt="About Us">About Us</h2>
+          <p alt="The Elite Repeat is a family-oriented, third generation business operated by a mother-daughter fashionista duo!">
+            The Elite Repeat is a family-oriented, third generation business operated by a mother-daughter fashionista duo!
+          </p>
         </div>
 
-        <div class="staff2" role="complementary" aria-label="Owl-Phone Staff Gallery Card"> 
-          <img src="./assets/Owl-Phone.png" class="galleryImage" aria-label="Owl-Phone">
-          <div class="staffGalleryDescriptions">
-              <h4>Owl-Phone</h4>
-          </div>
+        <div class="content-divs2">
+          <h2 class="content-div-subtitles" alt="Directions">Directions</h2>
+          <p alt="The Elite Repeat Shop 123 E. Odgen Ave Westmont, IL 60559">
+            The Elite Repeat Shop
+            123 E. Odgen Ave
+            Westmont, IL 60559
+          </p>
         </div>
 
-        <div class="staff3" role="complementary" aria-label="Eeyore-Zz Staff Gallery Card"> 
-          <img src="./assets/Eeyore-Zz.png" class="galleryImage" aria-label="Eeyore-Zz">
-          <div class="staffGalleryDescriptions">
-              <h4>Eeyore-Zz</h4>
-          </div>
+        <div class="content-divs3">
+          <h2 class="content-div-subtitles" alt="Hours">Hours</h2>
+          <p alt="Tuesday - Friday 1pm - 4pm; Saturday 11am - 4pm; Sunday - Monday Closed">
+            Tuesday - Friday
+              1pm - 4pm
+            Saturday
+              11am - 4pm
+            Sunday - Monday
+              Closed
+          </p>
         </div>
 
-        <div class="staff4" role="complementary" aria-label="Kanga-Roo Staff Gallery Card"> 
-          <img src="./assets/Kanga-Roo.png" class="galleryImage" aria-label="Kanga-Roo">
-          <div class="staffGalleryDescriptions">
-              <h4>Kanga-Roo</h4>
-          </div>
+        <div class="content-divs4">
+          <h2 class="content-div-subtitles" alt="Contact Us">Contact Us</h2>
+          <p alt="Tel: (630) 960-0540 Email: bossmoe@aol.com">
+            Tel: 
+              (630) 960-0540
+            Email: 
+              bossmoe@aol.com
+          </p>
         </div>
       </div>
-    </div>
-  </body>
+    </body>
 
 </html>
 
