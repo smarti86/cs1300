@@ -3,7 +3,7 @@
     2. Right click html file and either run in default browser or another browser
   -->
 
-
+<!-- Reference: I took my html and css setup from the work that I did in the Winnie-The-Poo studio -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,42 +22,37 @@
       <!-- Used https://www.w3.org/TR/WCAG20-TECHS/H37.html to refresh my understanding on alt tags -->
       <header>
         <div class="inner-background-header">
-          <h1 class="the-elite-repeat" alt="The Elite Repeat">The Elite Repeat</h1>
+          <h1 class="the-elite-repeat" aria-label="The Elite Repeat">The Elite Repeat</h1>
           <nav>
             <ul>
               <!-- Referenced YouTube video "How to Add Smooth Scrolling Anchor Links to Jump to a Specific 
                 Part of a Web Page - HTML & CSS" to get my nav bar to be functional and provide a better flow 
                 for the user -->
-              <li><a class="navClicks" href="#content-divs1" alt="About">About</a></li>
-              <li><a class="navClicks" href="#content-divs2" alt="Directions">Directions</a></li>
-              <li><a class="navClicks" href="#content-divs3" alt="Hours">Hours</a></li> 
-              <li><a class="navClicks" href="#content-divs4" alt="Contact Us">Contact Us</a></li> 
+              <li><a class="navClicks" href="#content-divs1" aria-label="About">About</a></li>
+              <li><a class="navClicks" href="#content-divs2" aria-label="Directions">Directions</a></li>
+              <li><a class="navClicks" href="#content-divs3" aria-label="Hours">Hours</a></li> 
+              <li><a class="navClicks" href="#content-divs4" aria-label="Contact Us">Contact Us</a></li> 
             </ul>
           </nav>
         </div>
       </header>
 
-      <!-- Begin the body content -->
-      
-      <!-- <div id="block-promo-hero" data-block="acf/promo-hero" class="fp-block promo-hero wide-block new position-relative row p-0 my-0 animate" data-has-countdown="false" data-show-countdown="true" data-is-active-campaign="true">
-		          -->
-
       <!-- <img class -->
       <!-- Referenced and used images from https://www.shopneutralground.com website -->
       <div class="banner-title">
-        <h1 alt="The Ultimate in Resale"> The Ultimate in Resale</h1>
+        <h1 aria-label="The Ultimate in Resale"> The Ultimate in Resale</h1>
       </div>
 
       <div class="banner">
-        <img src="front page image elite repeat.jpeg" alt="Banner Image">
+        <img src="assets/front page image elite repeat.jpeg" alt="Image of three stylish women posing around a bright blue couch." >
       </div>
 
       <div class="social-media">
-        <p>
-          For more of The Elite Repeat, follow: <br>
-          <a href="https://www.facebook.com/p/Elite-Repeat-Shop-100057687421651/"><br>Facebook</a>,
-          <a href="https://www.tiktok.com/find/elite-repeat-westmont">TikTok</a>, and
-          <a href="https://www.instagram.com/explore/locations/378174551/elite-repeat-shop/">Instagram<br></a>.
+        <p aria-label="For more of The Elite Repeat, follow us on:">
+          For more of The Elite Repeat, follow us on: <br>
+          <a aria-label="Facebook" href="https://www.facebook.com/p/Elite-Repeat-Shop-100057687421651/"><br>Facebook</a>,
+          <a aria-label="TicTok, and" href="https://www.tiktok.com/find/elite-repeat-westmont">TikTok</a>, and
+          <a aria-label="Instagram" href="https://www.instagram.com/explore/locations/378174551/elite-repeat-shop/">Instagram<br></a>
         </p>
       </div>
 
@@ -67,15 +62,15 @@
       <!-- Reference: for indentation inside of text, I referenced StackOverflow post https://stackoverflow.com/questions/2512443/how-do-you-indent-every-line-of-a-span-element -->
       <div class="content">
         <div class="content-divs1" id="content-divs1">
-          <h2 class="content-div-subtitles" alt="About Us">About Us</h2>
-          <p alt="The Elite Repeat is a family-oriented, third generation business operated by a mother-daughter fashionista duo!">
+          <h2 class="content-div-subtitles" alt="About Us" aria-label="About Us">About Us</h2>
+          <p aria-label="The Elite Repeat is a family-oriented, third generation business operated by a mother-daughter fashionista duo!">
             The Elite Repeat is a family-oriented, third generation business operated by a mother-daughter fashionista duo!
           </p>
         </div>
 
         <div class="content-divs2" id="content-divs2">
-          <h2 class="content-div-subtitles" alt="Directions">Directions</h2>
-          <p alt="The Elite Repeat Shop 123 E. Odgen Ave Westmont, IL 60559" href="https://www.google.com/maps/dir/41.8250752,-71.3949184/the+elite+repeat+illinois+google+map/@41.5127509,-90.2625318,5z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x880e4e89b5dbbe03:0xbf4c690f5c03bd4c!2m2!1d-87.9714442!2d41.8096444?entry=ttu">
+          <h2 class="content-div-subtitles" alt="Directions" aria-label="Directions">Directions</h2>
+          <p aria-label="The Elite Repeat Shop 123 E. Odgen Ave Westmont, IL 60559" href="https://www.google.com/maps/dir/41.8250752,-71.3949184/the+elite+repeat+illinois+google+map/@41.5127509,-90.2625318,5z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x880e4e89b5dbbe03:0xbf4c690f5c03bd4c!2m2!1d-87.9714442!2d41.8096444?entry=ttu">
             The Elite Repeat Shop <br>
             123 E. Odgen Ave<br>
             Westmont, IL 60559
@@ -83,8 +78,8 @@
         </div>
 
         <div class="content-divs3" id="content-divs3">
-          <h2 class="content-div-subtitles" alt="Hours">Hours</h2>
-          <p alt="Tuesday - Friday 1pm - 4pm; Saturday 11am - 4pm; Sunday - Monday Closed">
+          <h2 class="content-div-subtitles" alt="Hours" aria-label="Hours">Hours</h2>
+          <p aria-label="Tuesday - Friday 1pm - 4pm; Saturday 11am - 4pm; Sunday - Monday Closed">
             Tuesday - Friday<br>
             <span class="indented-text">1pm - 4pm</span><br>
             Saturday<br>
@@ -95,8 +90,8 @@
         </div>
 
         <div class="content-divs4" id="content-divs4">
-          <h2 class="content-div-subtitles" alt="Contact Us">Contact Us</h2>
-          <p alt="Tel: (630) 960-0540 Email: bossmoe@aol.com">
+          <h2 class="content-div-subtitles" alt="Contact Us" aria-label="Contact Us">Contact Us</h2>
+          <p aria-label="Tel: (630) 960-0540 Email: bossmoe@aol.com">
             Tel: <br>
             <span class="indented-text">(630) 960-0540</span><br>
             Email: <br>

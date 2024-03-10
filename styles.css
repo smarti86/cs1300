@@ -38,7 +38,7 @@ html{
 .banner-title{
   padding-top: 2%;
   text-align: center;
-  color: #FF592A;
+  color: #a42400;
 }
 
 /* Image Styling */
@@ -69,7 +69,7 @@ html{
 
 .social-media{
   flex-direction: row;
-  color: #FF592A;
+  color: #a42400;
   text-align: center;
   text-shadow: 2px 2px 5px beige;
   
@@ -127,9 +127,11 @@ p{
 
 .content-div-subtitles{
   margin-left: 0;
+  font-weight: bold;
   text-align: center;
-  text-shadow: 2px 2px 5px #f8883d;
-  color:#FF592A;
+  outline: black;
+  /* text-shadow: 2px 2px 5px white; */
+  color: #a42400;
 }
 
 h2{
@@ -146,7 +148,7 @@ h2{
     gap: 8em;
     flex-grow: 1;
     /* padding-top: 80px; */
-    padding: 300px 40px;
+    padding: 430px 40px;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: flex-start;
